@@ -1,0 +1,18 @@
+[
+  {
+    "wozaixiaoyaun_data":{
+      "username": "187xxxxxxxx",
+      "password": "xxxxxxxx",
+      "location":"10x.xxxxxx,3x.xxxxxx"
+    },
+    "pushPlus_data":{
+      "notifyToken" : "4f4xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    "leanCloud_data":{
+      "appId":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "masterKey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "class_name": "xxxxxxxxx"
+    },
+    "mark": "xxx"
+  }
+]
