@@ -6,4 +6,5 @@
 - 首次打卡需要抓包填写index.py中，`41`行`answers`的值和`138`行`Referer`的值。
 - 打卡时间段更改161-171行代码。
 - 抓包教程推荐：[抓包教程](https://gitee.com/dominic548/autocheck#一fiddler-抓包工具) 或者IOS设备，用Stream抓包
+- 更改代码之后记得点击`部署`！
 - 有问题联系简介QQ！ 
