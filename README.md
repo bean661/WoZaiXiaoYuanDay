@@ -8,3 +8,4 @@
 - 抓包教程推荐：[抓包教程](https://gitee.com/dominic548/autocheck#一fiddler-抓包工具) 或者IOS设备，用Stream抓包
 - 更改代码之后记得点击`部署`！
 - 有问题联系视频的下方的QQ群！ 
+![](https://gitee.com/Bean6560/images/raw/master/typora/QQ%E5%9B%BE%E7%89%8720220417221246.jpg)
