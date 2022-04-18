@@ -46,6 +46,7 @@ class leanCloud:
             "country": '中国',
             "city": _res['city'],
             "province": _res['province'],
+            "district": _res['district'],
             "township": _res['township'],
             "street": _res['streetNumber']['street'],
             "timestampHeader":round(time.time())
