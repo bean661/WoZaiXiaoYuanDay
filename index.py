@@ -202,7 +202,7 @@ class WoZaiXiaoYuanPuncher:
             "打卡项目": "日检日报",
             "打卡情况": notifyResult,
             "打卡信息": self.sign_data,
-            "打卡时间": time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())),
+            "打卡时间": (datetime.datetime.now() + datetime.timedelta(hours=8)).strftime('%Y-%m-%d %H:%M:%S'),
         }, ensure_ascii=False)
         msg = {
             "token": notifyToken,
