@@ -154,9 +154,12 @@ class WoZaiXiaoYuanPuncher:
         if response["code"] == 0:
             self.status_code = 1
             print("打卡成功")
+            if self.pushPlus_data['onlyWrongNotify'] == "false":
+                self.sendNotification()
         else:
             print(response)
             print("打卡失败")
+            self.sendNotification()
     # 获取打卡时段
     # seq的1,2,3代表早，中，晚
     def get_seq(self):
@@ -218,7 +221,7 @@ class WoZaiXiaoYuanPuncher:
         else:
             print("pushplus: " + r['code'] + ": " + r['msg'])
             print("消息经 pushplus 推送失败，请检查错误信息")
-if __name__ == '__main__':
+def startdk():
     # 读取配置文件
     configs = utils.processJson("config.json").read()
     # 遍历每个用户的账户数据，进行打卡
@@ -237,25 +240,9 @@ if __name__ == '__main__':
         else:
             print("检测到jwsession存在，使用jwsession打卡")
             wzxy.PunchIn()
-        wzxy.sendNotification()
+
+if __name__ == '__main__':
+    startdk()
 
 def handler(event, context):
-    # 读取配置文件
-    configs = utils.processJson("config.json").read()
-    # 遍历每个用户的账户数据，进行打卡
-    for config in configs:
-        wzxy = WoZaiXiaoYuanPuncher(config)
-        # 如果没有 jwsession，则 登录 + 打卡
-        jwsession = wzxy.leanCloud_obj.getJwsession()
-        if jwsession == "" or jwsession is None:
-            print("jwsession不存在 或者为none使用账号密码登录")
-            loginStatus = wzxy.login()
-            if loginStatus:
-                print("登录成功,开始打卡")
-                wzxy.PunchIn()
-            else:
-                print("登录失败")
-        else:
-            print("检测到jwsession存在，使用jwsession打卡")
-            wzxy.PunchIn()
-        wzxy.sendNotification()
+    startdk()
