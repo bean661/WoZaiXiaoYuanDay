@@ -1,18 +1,36 @@
 [
   {
     "wozaixiaoyaun_data":{
-      "username": "187xxxxxxxx",
-      "password": "xxxxxxxx",
-      "location":"10x.xxxxxx,3x.xxxxxx"
+      "username": "我在校园手机号",
+      "password": "我在校园密码",
+      "location":"打卡经纬度"
     },
     "pushPlus_data":{
-      "notifyToken" : "4f4xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "notifyToken" : "公众号获取的token",
+      "onlyWrongNotify" : "true"
     },
     "leanCloud_data":{
-      "appId":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "masterKey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "class_name": "xxxxxxxxx"
+      "appId":"leancloud获取的appid",
+      "masterKey": "leancloud获取的masterKey",
+      "class_name": "用户对应的class 一个用户一个class 不能共用"
     },
-    "mark": "xxx"
+    "mark": "Bean"
+  },
+  {
+    "wozaixiaoyaun_data":{
+      "username": "",
+      "password": "",
+      "location":""
+    },
+    "pushPlus_data":{
+      "notifyToken" : "",
+      "onlyWrongNotify" : "true"
+    },
+    "leanCloud_data":{
+      "appId":"",
+      "masterKey": "",
+      "class_name": ""
+    },
+    "mark": ""
   }
 ]
