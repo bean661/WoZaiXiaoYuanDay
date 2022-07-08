@@ -48,6 +48,8 @@ class leanCloud:
             "district": _res['district'],
             "township": _res['township'],
             "street": _res['streetNumber']['street'],
+            "towncode":"0",
+            "citycode":"0",
             "timestampHeader":round(time.time())
         }
         return sign_data
