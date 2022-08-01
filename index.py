@@ -249,3 +249,6 @@ if __name__ == '__main__':
 
 def handler(event, context):
     startdk()
+
+def main_handler(event, context):
+    startdk()
